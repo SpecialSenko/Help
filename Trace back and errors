@@ -1,0 +1,39 @@
+Hello guys i need help with this i hope one of you can help me with this issue... using renpy and python also a bit of java
+
+I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/discord.rpy", line 3, in script
+    init -20 python:
+  File "game/discord.rpy", line 3, in script
+    init -20 python:
+  File "game/discord.rpy", line 4, in <module>
+    import discord_rpc
+ModuleNotFoundError: No module named 'discord_rpc'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\alfat\Downloads\renpy-8.1.2-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "C:\Users\alfat\Downloads\renpy-8.1.2-sdk\renpy\main.py", line 564, in main
+    renpy.game.context().run(node)
+  File "game/discord.rpy", line 3, in script
+    init -20 python:
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "game/discord.rpy", line 3, in script
+    init -20 python:
+  File "C:\Users\alfat\Downloads\renpy-8.1.2-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\alfat\Downloads\renpy-8.1.2-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/discord.rpy", line 4, in <module>
+    import discord_rpc
+ModuleNotFoundError: No module named 'discord_rpc'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.3.23091805
+FraxbGameZZ 1000.0
+Wed Dec 27 01:08:50 2023
+
+
